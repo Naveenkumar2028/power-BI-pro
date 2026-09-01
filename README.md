@@ -1,30 +1,75 @@
 # Sales Performance & Customer Intelligence Dashboard
 
-A recruiter-ready **Power BI Data Analytics project** focused on sales performance, customer behavior, product profitability, and regional trends.
+> **From raw sales to clear decisions.** A recruiter-facing Business Intelligence case study built to demonstrate an end-to-end Data Analytics workflow.
 
-## Business Objective
-Build an interactive BI solution that helps management answer:
-- How are revenue, orders, customers, and profit performing?
-- Which products and categories drive revenue and margin?
-- Which customers generate the most value?
-- Which regions are growing or underperforming?
-- How does performance change month-over-month and year-over-year?
+## 🚀 Live Portfolio Dashboard
 
-## Tech Stack
-- **Power BI Desktop** — dashboarding and reporting
-- **Power Query (M)** — data cleaning and transformation
-- **DAX** — business measures and time intelligence
-- **Star Schema** — dimensional data modeling
-- **SQL** — analytical validation queries
-- **CSV** — source data
+**[Open the interactive dashboard](https://naveenkumar2028.github.io/power-BI-pro/)**
 
-## Data Model
-The target model follows a star schema:
+The web demo mirrors the analytical story of the Power BI project and is designed for quick recruiter review.
 
-`Fact Sales` → `Dim Date`, `Dim Customer`, `Dim Product`, `Dim Geography`
+## 🎯 Business Problem
+Management needs one view of sales performance to understand:
+- Revenue and profit performance
+- Month-over-month movement and growth opportunities
+- Product and category contribution
+- Customer segment value and concentration
+- Regional profitability
+- Target achievement and management priorities
+
+## 🧰 Tech Stack
+| Layer | Technology |
+|---|---|
+| BI & Visualization | **Power BI Desktop** |
+| Transformation | **Power Query (M)** |
+| Analytics | **DAX** |
+| Validation | **SQL** |
+| Modeling | **Star Schema / Dimensional Modeling** |
+| Source | **CSV** |
+| Portfolio Demo | **HTML, CSS, JavaScript, GitHub Pages** |
+
+## 🧠 Analytical Workflow
+
+```text
+Raw sales data
+      ↓
+Power Query cleaning & validation
+      ↓
+Star-schema data model
+      ↓
+DAX KPI + time-intelligence measures
+      ↓
+SQL reconciliation
+      ↓
+Interactive Power BI report
+      ↓
+Business insights & recommendations
+```
+
+## ⭐ Dashboard Experience
+The portfolio dashboard is organized around an executive decision flow:
+
+1. **Executive Overview** — revenue, profit, margin, orders and customers
+2. **Performance Overview** — revenue trend, category performance, regional profit and top products
+3. **Customer & Portfolio Mix** — segment contribution and concentration
+4. **Decision Signals** — category, region and product leaders
+5. **Executive Insights** — business-oriented interpretation of the metrics
+
+Filters for **Region, Category and Customer Segment** update the interactive portfolio view.
+
+## 📐 Data Model
+The target Power BI model follows a star schema:
+
+```text
+             Dim Date
+                 │
+Dim Customer ─ Fact Sales ─ Dim Product
+                 │
+          Dim Geography
+```
 
 ### Fact Sales
-OrderID, OrderDate, CustomerID, ProductID, GeographyID, Quantity, UnitPrice, DiscountPct, CostPerUnit
+`OrderID`, `OrderDate`, `CustomerID`, `ProductID`, `GeographyID`, `Quantity`, `UnitPrice`, `DiscountPct`, `CostPerUnit`
 
 ### Dimensions
 - **Dim Customer:** CustomerID, CustomerName, Segment
@@ -32,57 +77,36 @@ OrderID, OrderDate, CustomerID, ProductID, GeographyID, Quantity, UnitPrice, Dis
 - **Dim Geography:** GeographyID, Region, State, City
 - **Dim Date:** Date, Year, Quarter, MonthNo, Month, YearMonth
 
-## Dashboard Pages
-### 1. Executive Overview
-KPIs: Revenue, Profit, Orders, Customers, Profit Margin, YoY Growth
+## 📊 KPI Framework
+- **Net Revenue** — sales after discounts
+- **Gross Profit** — net revenue minus cost
+- **Profit Margin** — profit / revenue
+- **Orders** — distinct transactions
+- **Customers** — distinct active customers
+- **Average Order Value** — revenue / orders
+- **MoM Growth %** — current month versus previous month
+- **YoY Growth %** — current period versus prior year when prior-year data exists
+- **Target Achievement %** — performance against the management target assumption
 
-Visuals: monthly revenue trend, revenue by category, top products, regional performance, sales/profit summary.
+## 💡 Business Questions
+1. Which category generates the most revenue?
+2. Which products create the most profit?
+3. Which region is the strongest contributor to profit?
+4. Which customer segment drives the largest revenue share?
+5. How is monthly revenue moving?
+6. Where should management prioritize attention?
 
-### 2. Customer Analytics
-Customer segmentation, revenue by segment, repeat customers, top customers, average order value, customer contribution.
+## 🧪 Validation
+Power BI calculations are supported by SQL validation queries covering:
+- Total revenue, cost and profit
+- Category performance
+- Regional performance
+- Customer ranking
+- Monthly sales trend
+- Product performance
 
-### 3. Product Analytics
-Top/bottom products, category revenue, quantity sold, gross profit, profit margin, product contribution.
+## 📁 Repository Structure
 
-### 4. Regional Analytics
-Revenue and profit by region/state/city, regional growth, map-ready geography fields, regional ranking.
-
-## Core DAX Measures
-```DAX
-Total Revenue = SUMX('Fact Sales', 'Fact Sales'[Quantity] * 'Fact Sales'[UnitPrice] * (1 - 'Fact Sales'[DiscountPct]))
-
-Total Cost = SUMX('Fact Sales', 'Fact Sales'[Quantity] * 'Fact Sales'[CostPerUnit])
-
-Total Profit = [Total Revenue] - [Total Cost]
-
-Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
-
-Total Orders = DISTINCTCOUNT('Fact Sales'[OrderID])
-
-Total Customers = DISTINCTCOUNT('Fact Sales'[CustomerID])
-
-Total Quantity = SUM('Fact Sales'[Quantity])
-
-Average Order Value = DIVIDE([Total Revenue], [Total Orders])
-
-Revenue LY = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Dim Date'[Date]))
-
-YoY Growth % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
-```
-
-## Project Workflow
-1. Load CSV data into Power BI.
-2. Clean and validate data with Power Query.
-3. Create dimension tables and a star-schema model.
-4. Create relationships using surrogate/business keys.
-5. Build a proper Date table.
-6. Add DAX measures for KPIs and time intelligence.
-7. Build four dashboard pages.
-8. Add slicers, drill-through, tooltips, and bookmarks where useful.
-9. Validate totals against SQL queries.
-10. Export dashboard screenshots and document business insights.
-
-## Repository Structure
 ```text
 power-BI-pro/
 ├── README.md
@@ -95,11 +119,25 @@ power-BI-pro/
 ├── sql/
 │   └── validation_queries.sql
 └── docs/
-    └── dashboard_plan.md
+    ├── dashboard_plan.md
+    └── portfolio-case-study.md
 ```
 
-## Key Skills Demonstrated
-Power BI, Power Query, DAX, data modeling, star schema, SQL analytics, KPI design, time intelligence, data cleaning, business storytelling, and dashboard design.
+## 👨‍💻 Recruiter Value
+This project demonstrates more than dashboard design. It shows the complete analytics lifecycle:
 
-## Note
-The `.pbix` file is intentionally kept outside Git history because Power BI Desktop files are binary. The repository contains the reproducible dataset, transformation logic, DAX, SQL validation, dashboard plan, and documentation needed to recreate the report.
+**Data cleaning → Data modeling → DAX → SQL validation → Visualization → Business storytelling**
+
+### Interview topics demonstrated
+- Why star schema is effective for BI
+- Measures vs calculated columns
+- DAX time intelligence
+- Power Query transformations
+- SQL reconciliation of BI metrics
+- KPI and dashboard design
+- Turning metrics into actionable recommendations
+
+## 📌 Portfolio Note
+The `.pbix` file is binary and is intentionally not stored in Git history. The repository contains the source data, transformation logic, DAX measures, SQL validation and documentation needed to reproduce the analytical solution.
+
+See the detailed case study in [`docs/portfolio-case-study.md`](docs/portfolio-case-study.md).
