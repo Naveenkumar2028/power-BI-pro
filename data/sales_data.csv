@@ -1,37 +1,501 @@
 OrderID,OrderDate,CustomerID,CustomerName,Segment,ProductID,ProductName,Category,Region,State,City,Quantity,UnitPrice,DiscountPct,CostPerUnit
-1001,2025-01-05,C001,Aarav Traders,SMB,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,2,65000,0.05,52000
-1002,2025-01-12,C002,Bright Stores,Retail,P102,Wireless Mouse,Accessories,South,Karnataka,Mysuru,8,1200,0.00,700
-1003,2025-01-18,C003,Green Mart,SMB,P103,Office Chair,Furniture,South,Tamil Nadu,Chennai,4,8500,0.10,6000
-1004,2025-02-03,C004,Prime Retail,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,5,14500,0.05,10500
-1005,2025-02-10,C005,Urban Needs,Enterprise,P105,Keyboard,Accessories,West,Maharashtra,Pune,10,1800,0.02,1050
-1006,2025-02-22,C001,Aarav Traders,SMB,P106,Desk,Furniture,South,Karnataka,Bengaluru,3,12000,0.08,8200
-1007,2025-03-02,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Delhi,4,65000,0.07,52000
-1008,2025-03-11,C007,Value Hub,Retail,P107,Printer,Electronics,North,Uttar Pradesh,Noida,3,18500,0.05,14000
-1009,2025-03-19,C008,Smart Bazaar,SMB,P108,Headset,Accessories,East,West Bengal,Kolkata,12,3200,0.00,1900
-1010,2025-04-04,C002,Bright Stores,Retail,P103,Office Chair,Furniture,South,Karnataka,Mysuru,5,8500,0.05,6000
-1011,2025-04-15,C009,City Enterprise,Enterprise,P109,Tablet,Electronics,West,Gujarat,Ahmedabad,6,28000,0.06,22000
-1012,2025-04-27,C010,Daily Needs,Retail,P102,Wireless Mouse,Accessories,South,Kerala,Kochi,15,1200,0.00,700
-1013,2025-05-06,C003,Green Mart,SMB,P104,Monitor 24,Electronics,South,Tamil Nadu,Coimbatore,4,14500,0.04,10500
-1014,2025-05-17,C004,Prime Retail,Retail,P110,Webcam,Accessories,West,Maharashtra,Mumbai,7,4200,0.05,2500
-1015,2025-05-29,C011,Office World,Enterprise,P106,Desk,Furniture,North,Delhi,Gurugram,5,12000,0.10,8200
-1016,2025-06-08,C012,Tech Point,SMB,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,3,65000,0.05,52000
-1017,2025-06-16,C005,Urban Needs,Enterprise,P107,Printer,Electronics,West,Maharashtra,Pune,4,18500,0.08,14000
-1018,2025-06-25,C006,Metro Supplies,Enterprise,P105,Keyboard,Accessories,North,Delhi,Delhi,18,1800,0.03,1050
-1019,2025-07-03,C007,Value Hub,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,10,3200,0.05,1900
-1020,2025-07-14,C001,Aarav Traders,SMB,P109,Tablet,Electronics,South,Karnataka,Bengaluru,4,28000,0.06,22000
-1021,2025-07-28,C008,Smart Bazaar,SMB,P103,Office Chair,Furniture,East,West Bengal,Kolkata,6,8500,0.08,6000
-1022,2025-08-05,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,West,Gujarat,Ahmedabad,8,14500,0.05,10500
-1023,2025-08-18,C010,Daily Needs,Retail,P102,Wireless Mouse,Accessories,South,Kerala,Kochi,20,1200,0.02,700
-1024,2025-08-27,C011,Office World,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Gurugram,5,65000,0.08,52000
-1025,2025-09-06,C012,Tech Point,SMB,P110,Webcam,Accessories,East,West Bengal,Kolkata,9,4200,0.03,2500
-1026,2025-09-15,C002,Bright Stores,Retail,P106,Desk,Furniture,South,Karnataka,Mysuru,4,12000,0.05,8200
-1027,2025-09-23,C003,Green Mart,SMB,P105,Keyboard,Accessories,South,Tamil Nadu,Chennai,14,1800,0.00,1050
-1028,2025-10-02,C004,Prime Retail,Retail,P107,Printer,Electronics,West,Maharashtra,Mumbai,5,18500,0.06,14000
-1029,2025-10-11,C005,Urban Needs,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,7,28000,0.07,22000
-1030,2025-10-24,C006,Metro Supplies,Enterprise,P104,Monitor 24,Electronics,North,Delhi,Delhi,6,14500,0.04,10500
-1031,2025-11-03,C007,Value Hub,Retail,P103,Office Chair,Furniture,North,Uttar Pradesh,Noida,7,8500,0.05,6000
-1032,2025-11-12,C008,Smart Bazaar,SMB,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,16,1200,0.00,700
-1033,2025-11-21,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,West,Gujarat,Ahmedabad,3,65000,0.06,52000
-1034,2025-12-04,C010,Daily Needs,Retail,P108,Headset,Accessories,South,Kerala,Kochi,13,3200,0.02,1900
-1035,2025-12-13,C011,Office World,Enterprise,P106,Desk,Furniture,North,Delhi,Gurugram,6,12000,0.08,8200
-1036,2025-12-22,C012,Tech Point,SMB,P107,Printer,Electronics,East,West Bengal,Kolkata,4,18500,0.05,14000
+2001,2025-11-24,C004,Prime Retail,Retail,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,8,65000,0.06,52000
+2002,2025-10-06,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,13,14500,0.08,10500
+2003,2025-04-25,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,North,Delhi,Delhi,5,28000,0.02,22000
+2004,2025-05-29,C004,Prime Retail,Retail,P110,Webcam,Accessories,South,Karnataka,Mysuru,15,4200,0.05,2500
+2005,2025-09-19,C004,Prime Retail,Retail,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,1,8500,0.03,6000
+2006,2025-02-21,C019,Digital House,Retail,P107,Printer,Electronics,South,Karnataka,Bengaluru,3,18500,0.1,14000
+2007,2025-04-23,C006,Metro Supplies,Enterprise,P110,Webcam,Accessories,West,Maharashtra,Pune,8,4200,0.05,2500
+2008,2025-12-18,C016,NextGen Stores,Retail,P105,Keyboard,Accessories,North,Uttar Pradesh,Noida,7,1800,0.02,1050
+2009,2025-07-12,C009,City Enterprise,Enterprise,P103,Office Chair,Furniture,East,West Bengal,Kolkata,18,8500,0.06,6000
+2010,2025-05-02,C001,Aarav Traders,SMB,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,18,4200,0.06,2500
+2011,2025-01-19,C011,Office World,Enterprise,P110,Webcam,Accessories,North,Delhi,Gurugram,14,4200,0.03,2500
+2012,2025-03-04,C004,Prime Retail,Retail,P102,Wireless Mouse,Accessories,North,Delhi,Delhi,4,1200,0.0,700
+2013,2025-06-11,C009,City Enterprise,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,2,28000,0.03,22000
+2014,2025-11-15,C007,Value Hub,Retail,P101,Laptop Pro,Electronics,South,Kerala,Kochi,6,65000,0.08,52000
+2015,2025-01-07,C012,Tech Point,SMB,P109,Tablet,Electronics,West,Maharashtra,Mumbai,17,28000,0.02,22000
+2016,2025-02-14,C005,Urban Needs,Enterprise,P104,Monitor 24,Electronics,North,Delhi,Gurugram,13,14500,0.08,10500
+2017,2025-04-20,C014,Apex Systems,Enterprise,P110,Webcam,Accessories,West,Maharashtra,Pune,15,4200,0.05,2500
+2018,2025-08-12,C009,City Enterprise,Enterprise,P107,Printer,Electronics,South,Karnataka,Mysuru,13,18500,0.1,14000
+2019,2025-06-27,C001,Aarav Traders,SMB,P108,Headset,Accessories,East,West Bengal,Kolkata,20,3200,0.03,1900
+2020,2025-08-21,C011,Office World,Enterprise,P107,Printer,Electronics,West,Gujarat,Ahmedabad,14,18500,0.05,14000
+2021,2025-09-15,C018,Kaveri Mart,SMB,P109,Tablet,Electronics,North,Delhi,Delhi,17,28000,0.02,22000
+2022,2025-12-28,C002,Bright Stores,Retail,P105,Keyboard,Accessories,South,Kerala,Kochi,5,1800,0.0,1050
+2023,2025-11-08,C019,Digital House,Retail,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,16,65000,0.08,52000
+2024,2025-07-04,C005,Urban Needs,Enterprise,P108,Headset,Accessories,South,Tamil Nadu,Chennai,4,3200,0.02,1900
+2025,2025-06-14,C020,Summit Solutions,Enterprise,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,7,1200,0.03,700
+2026,2025-08-02,C016,NextGen Stores,Retail,P106,Desk,Furniture,North,Delhi,Gurugram,14,12000,0.05,8200
+2027,2025-03-28,C011,Office World,Enterprise,P107,Printer,Electronics,South,Karnataka,Bengaluru,2,18500,0.06,14000
+2028,2025-02-04,C007,Value Hub,Retail,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,15,1800,0.05,1050
+2029,2025-09-10,C004,Prime Retail,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,16,3200,0.0,1900
+2030,2025-01-24,C013,Nova Retail,Retail,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,13,1200,0.1,700
+2031,2025-03-15,C010,Daily Needs,Retail,P104,Monitor 24,Electronics,South,Kerala,Kochi,18,14500,0.03,10500
+2032,2025-04-11,C019,Digital House,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,19,28000,0.05,22000
+2033,2025-07-25,C003,Green Mart,SMB,P108,Headset,Accessories,West,Maharashtra,Pune,17,3200,0.06,1900
+2034,2025-10-19,C014,Apex Systems,Enterprise,P106,Desk,Furniture,South,Tamil Nadu,Chennai,9,12000,0.02,8200
+2035,2025-05-15,C015,Blue Star Traders,SMB,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,8,14500,0.1,10500
+2036,2025-02-23,C001,Aarav Traders,SMB,P105,Keyboard,Accessories,South,Karnataka,Mysuru,12,1800,0.03,1050
+2037,2025-11-02,C020,Summit Solutions,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Gurugram,16,65000,0.06,52000
+2038,2025-12-11,C009,City Enterprise,Enterprise,P108,Headset,Accessories,East,West Bengal,Kolkata,3,3200,0.02,1900
+2039,2025-09-28,C018,Kaveri Mart,SMB,P103,Office Chair,Furniture,South,Karnataka,Bengaluru,7,8500,0.05,6000
+2040,2025-08-17,C005,Urban Needs,Enterprise,P101,Laptop Pro,Electronics,West,Gujarat,Ahmedabad,11,65000,0.08,52000
+2041,2025-10-03,C012,Tech Point,SMB,P107,Printer,Electronics,North,Uttar Pradesh,Noida,5,18500,0.03,14000
+2042,2025-06-30,C006,Metro Supplies,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,14,28000,0.1,22000
+2043,2025-04-04,C017,Vertex Corp,Enterprise,P110,Webcam,Accessories,West,Maharashtra,Pune,2,4200,0.05,2500
+2044,2025-01-31,C003,Green Mart,SMB,P106,Desk,Furniture,South,Kerala,Kochi,6,12000,0.0,8200
+2045,2025-07-18,C007,Value Hub,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,20,28000,0.06,22000
+2046,2025-03-09,C010,Daily Needs,Retail,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,4,65000,0.03,52000
+2047,2025-05-22,C011,Office World,Enterprise,P103,Office Chair,Furniture,South,Karnataka,Mysuru,10,8500,0.08,6000
+2048,2025-12-02,C002,Bright Stores,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,12,14500,0.02,10500
+2049,2025-10-28,C016,NextGen Stores,Retail,P107,Printer,Electronics,North,Delhi,Gurugram,15,18500,0.05,14000
+2050,2025-08-29,C020,Summit Solutions,Enterprise,P105,Keyboard,Accessories,South,Karnataka,Bengaluru,18,1800,0.1,1050
+2051,2025-02-09,C008,Smart Bazaar,SMB,P110,Webcam,Accessories,East,West Bengal,Kolkata,11,4200,0.02,2500
+2052,2025-05-05,C013,Nova Retail,Retail,P106,Desk,Furniture,West,Gujarat,Ahmedabad,3,12000,0.05,8200
+2053,2025-09-07,C006,Metro Supplies,Enterprise,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,19,1200,0.03,700
+2054,2025-11-26,C014,Apex Systems,Enterprise,P101,Laptop Pro,Electronics,South,Kerala,Kochi,9,65000,0.08,52000
+2055,2025-04-29,C019,Digital House,Retail,P105,Keyboard,Accessories,South,Tamil Nadu,Chennai,6,1800,0.0,1050
+2056,2025-07-01,C015,Blue Star Traders,SMB,P108,Headset,Accessories,West,Maharashtra,Pune,12,3200,0.06,1900
+2057,2025-06-06,C004,Prime Retail,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,8,28000,0.05,22000
+2058,2025-03-21,C012,Tech Point,SMB,P103,Office Chair,Furniture,South,Karnataka,Bengaluru,17,8500,0.1,6000
+2059,2025-10-12,C001,Aarav Traders,SMB,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,13,14500,0.04,10500
+2060,2025-12-21,C005,Urban Needs,Enterprise,P106,Desk,Furniture,West,Maharashtra,Mumbai,5,12000,0.07,8200
+2061,2025-01-13,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Gurugram,3,65000,0.05,52000
+2062,2025-02-27,C017,Vertex Corp,Enterprise,P107,Printer,Electronics,South,Karnataka,Mysuru,18,18500,0.08,14000
+2063,2025-03-31,C007,Value Hub,Retail,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,7,4200,0.02,2500
+2064,2025-04-18,C010,Daily Needs,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,15,3200,0.06,1900
+2065,2025-05-30,C018,Kaveri Mart,SMB,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,10,1200,0.03,700
+2066,2025-06-19,C011,Office World,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,6,28000,0.05,22000
+2067,2025-07-08,C003,Green Mart,SMB,P107,Printer,Electronics,West,Maharashtra,Pune,4,18500,0.0,14000
+2068,2025-08-24,C016,NextGen Stores,Retail,P103,Office Chair,Furniture,North,Delhi,Delhi,16,8500,0.08,6000
+2069,2025-09-21,C020,Summit Solutions,Enterprise,P104,Monitor 24,Electronics,South,Kerala,Kochi,11,14500,0.06,10500
+2070,2025-10-07,C002,Bright Stores,Retail,P106,Desk,Furniture,West,Maharashtra,Mumbai,14,12000,0.04,8200
+2071,2025-11-17,C006,Metro Supplies,Enterprise,P105,Keyboard,Accessories,North,Delhi,Gurugram,8,1800,0.05,1050
+2072,2025-12-07,C013,Nova Retail,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,19,28000,0.09,22000
+2073,2025-01-26,C015,Blue Star Traders,SMB,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,7,65000,0.03,52000
+2074,2025-02-16,C019,Digital House,Retail,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,13,4200,0.05,2500
+2075,2025-03-18,C004,Prime Retail,Retail,P103,Office Chair,Furniture,North,Uttar Pradesh,Noida,2,8500,0.02,6000
+2076,2025-04-27,C014,Apex Systems,Enterprise,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,20,1200,0.08,700
+2077,2025-05-12,C008,Smart Bazaar,SMB,P107,Printer,Electronics,West,Maharashtra,Pune,9,18500,0.06,14000
+2078,2025-06-23,C005,Urban Needs,Enterprise,P104,Monitor 24,Electronics,North,Delhi,Delhi,17,14500,0.05,10500
+2079,2025-07-14,C012,Tech Point,SMB,P108,Headset,Accessories,East,West Bengal,Kolkata,5,3200,0.03,1900
+2080,2025-08-09,C001,Aarav Traders,SMB,P106,Desk,Furniture,South,Karnataka,Mysuru,15,12000,0.1,8200
+2081,2025-09-03,C017,Vertex Corp,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Mumbai,4,28000,0.07,22000
+2082,2025-10-22,C010,Daily Needs,Retail,P101,Laptop Pro,Electronics,North,Delhi,Gurugram,12,65000,0.05,52000
+2083,2025-11-29,C007,Value Hub,Retail,P105,Keyboard,Accessories,South,Kerala,Kochi,14,1800,0.02,1050
+2084,2025-12-15,C011,Office World,Enterprise,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,6,8500,0.06,6000
+2085,2025-01-04,C020,Summit Solutions,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,16,18500,0.08,14000
+2086,2025-02-19,C003,Green Mart,SMB,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,3,4200,0.05,2500
+2087,2025-03-07,C018,Kaveri Mart,SMB,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,18,1200,0.0,700
+2088,2025-04-13,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Delhi,10,65000,0.09,52000
+2089,2025-05-26,C016,NextGen Stores,Retail,P109,Tablet,Electronics,South,Karnataka,Bengaluru,7,28000,0.04,22000
+2090,2025-06-04,C009,City Enterprise,Enterprise,P106,Desk,Furniture,West,Maharashtra,Mumbai,11,12000,0.06,8200
+2091,2025-07-29,C013,Nova Retail,Retail,P104,Monitor 24,Electronics,North,Uttar Pradesh,Noida,5,14500,0.02,10500
+2092,2025-08-15,C002,Bright Stores,Retail,P108,Headset,Accessories,East,West Bengal,Kolkata,17,3200,0.05,1900
+2093,2025-09-11,C014,Apex Systems,Enterprise,P105,Keyboard,Accessories,South,Kerala,Kochi,12,1800,0.03,1050
+2094,2025-10-05,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,19,8500,0.08,6000
+2095,2025-11-06,C005,Urban Needs,Enterprise,P110,Webcam,Accessories,North,Delhi,Gurugram,4,4200,0.02,2500
+2096,2025-12-24,C019,Digital House,Retail,P107,Printer,Electronics,South,Tamil Nadu,Chennai,8,18500,0.06,14000
+2097,2025-01-29,C012,Tech Point,SMB,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,15,14500,0.05,10500
+2098,2025-02-08,C001,Aarav Traders,SMB,P102,Wireless Mouse,Accessories,South,Karnataka,Bengaluru,9,1200,0.03,700
+2099,2025-03-26,C017,Vertex Corp,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,13,28000,0.08,22000
+2100,2025-04-06,C004,Prime Retail,Retail,P101,Laptop Pro,Electronics,North,Delhi,Delhi,18,65000,0.06,52000
+2101,2025-05-18,C010,Daily Needs,Retail,P106,Desk,Furniture,South,Karnataka,Mysuru,7,12000,0.05,8200
+2102,2025-06-12,C008,Smart Bazaar,SMB,P105,Keyboard,Accessories,West,Maharashtra,Mumbai,16,1800,0.02,1050
+2103,2025-07-06,C011,Office World,Enterprise,P108,Headset,Accessories,North,Uttar Pradesh,Noida,10,3200,0.04,1900
+2104,2025-08-28,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,East,West Bengal,Kolkata,3,8500,0.1,6000
+2105,2025-09-27,C007,Value Hub,Retail,P107,Printer,Electronics,South,Kerala,Kochi,15,18500,0.05,14000
+2106,2025-10-16,C003,Green Mart,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,11,4200,0.03,2500
+2107,2025-11-24,C016,NextGen Stores,Retail,P109,Tablet,Electronics,North,Delhi,Gurugram,6,28000,0.07,22000
+2108,2025-12-19,C014,Apex Systems,Enterprise,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,14,14500,0.06,10500
+2109,2025-01-11,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,5,65000,0.05,52000
+2110,2025-02-25,C018,Kaveri Mart,SMB,P106,Desk,Furniture,North,Delhi,Delhi,13,12000,0.08,8200
+2111,2025-03-12,C013,Nova Retail,Retail,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,6,1200,0.0,700
+2112,2025-04-24,C009,City Enterprise,Enterprise,P107,Printer,Electronics,South,Karnataka,Bengaluru,17,18500,0.04,14000
+2113,2025-05-09,C002,Bright Stores,Retail,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,9,8500,0.05,6000
+2114,2025-06-26,C005,Urban Needs,Enterprise,P109,Tablet,Electronics,North,Uttar Pradesh,Noida,4,28000,0.06,22000
+2115,2025-07-17,C019,Digital House,Retail,P108,Headset,Accessories,South,Kerala,Kochi,18,3200,0.02,1900
+2116,2025-08-06,C012,Tech Point,SMB,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,13,1800,0.05,1050
+2117,2025-09-18,C015,Blue Star Traders,SMB,P110,Webcam,Accessories,North,Delhi,Gurugram,8,4200,0.03,2500
+2118,2025-10-09,C001,Aarav Traders,SMB,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,19,14500,0.08,10500
+2119,2025-11-13,C010,Daily Needs,Retail,P101,Laptop Pro,Electronics,South,Tamil Nadu,Chennai,2,65000,0.02,52000
+2120,2025-12-27,C017,Vertex Corp,Enterprise,P106,Desk,Furniture,West,Maharashtra,Pune,16,12000,0.07,8200
+2121,2025-01-22,C007,Value Hub,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,10,28000,0.05,22000
+2122,2025-02-06,C011,Office World,Enterprise,P105,Keyboard,Accessories,South,Karnataka,Mysuru,20,1800,0.03,1050
+2123,2025-03-23,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,5,8500,0.06,6000
+2124,2025-04-30,C004,Prime Retail,Retail,P108,Headset,Accessories,East,West Bengal,Kolkata,12,3200,0.05,1900
+2125,2025-05-21,C014,Apex Systems,Enterprise,P107,Printer,Electronics,South,Kerala,Kochi,7,18500,0.08,14000
+2126,2025-06-08,C003,Green Mart,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,14,4200,0.02,2500
+2127,2025-07-23,C006,Metro Supplies,Enterprise,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,11,1200,0.0,700
+2128,2025-08-18,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,South,Tamil Nadu,Chennai,15,65000,0.09,52000
+2129,2025-09-30,C016,NextGen Stores,Retail,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,6,14500,0.04,10500
+2130,2025-10-14,C013,Nova Retail,Retail,P106,Desk,Furniture,West,Maharashtra,Mumbai,9,12000,0.05,8200
+2131,2025-11-20,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,North,Delhi,Gurugram,3,28000,0.03,22000
+2132,2025-12-05,C019,Digital House,Retail,P105,Keyboard,Accessories,South,Karnataka,Bengaluru,17,1800,0.06,1050
+2133,2025-01-18,C005,Urban Needs,Enterprise,P107,Printer,Electronics,West,Maharashtra,Pune,8,18500,0.05,14000
+2134,2025-02-12,C012,Tech Point,SMB,P108,Headset,Accessories,North,Delhi,Delhi,13,3200,0.02,1900
+2135,2025-03-29,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,South,Kerala,Kochi,4,8500,0.1,6000
+2136,2025-04-16,C002,Bright Stores,Retail,P109,Tablet,Electronics,West,Gujarat,Ahmedabad,18,28000,0.07,22000
+2137,2025-05-07,C017,Vertex Corp,Enterprise,P104,Monitor 24,Electronics,North,Uttar Pradesh,Noida,10,14500,0.05,10500
+2138,2025-06-17,C001,Aarav Traders,SMB,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,6,65000,0.04,52000
+2139,2025-07-10,C011,Office World,Enterprise,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,16,4200,0.08,2500
+2140,2025-08-30,C007,Value Hub,Retail,P106,Desk,Furniture,West,Maharashtra,Pune,12,12000,0.05,8200
+2141,2025-09-09,C020,Summit Solutions,Enterprise,P102,Wireless Mouse,Accessories,North,Delhi,Gurugram,19,1200,0.03,700
+2142,2025-10-26,C004,Prime Retail,Retail,P108,Headset,Accessories,South,Karnataka,Mysuru,5,3200,0.06,1900
+2143,2025-11-04,C014,Apex Systems,Enterprise,P103,Office Chair,Furniture,East,West Bengal,Kolkata,15,8500,0.08,6000
+2144,2025-12-12,C006,Metro Supplies,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Mumbai,7,28000,0.02,22000
+2145,2025-01-27,C010,Daily Needs,Retail,P105,Keyboard,Accessories,North,Uttar Pradesh,Noida,9,1800,0.0,1050
+2146,2025-02-17,C018,Kaveri Mart,SMB,P107,Printer,Electronics,South,Karnataka,Bengaluru,13,18500,0.05,14000
+2147,2025-03-05,C009,City Enterprise,Enterprise,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,11,4200,0.03,2500
+2148,2025-04-08,C016,NextGen Stores,Retail,P104,Monitor 24,Electronics,North,Delhi,Delhi,2,14500,0.06,10500
+2149,2025-05-24,C013,Nova Retail,Retail,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,14,65000,0.08,52000
+2150,2025-06-29,C003,Green Mart,SMB,P106,Desk,Furniture,South,Kerala,Kochi,6,12000,0.05,8200
+2151,2025-07-16,C005,Urban Needs,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,17,28000,0.07,22000
+2152,2025-08-04,C012,Tech Point,SMB,P105,Keyboard,Accessories,North,Delhi,Gurugram,20,1800,0.02,1050
+2153,2025-09-14,C019,Digital House,Retail,P108,Headset,Accessories,South,Tamil Nadu,Chennai,8,3200,0.04,1900
+2154,2025-10-31,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,10,8500,0.05,6000
+2155,2025-11-11,C011,Office World,Enterprise,P107,Printer,Electronics,North,Uttar Pradesh,Noida,4,18500,0.08,14000
+2156,2025-12-23,C020,Summit Solutions,Enterprise,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,15,1200,0.03,700
+2157,2025-01-09,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,South,Karnataka,Mysuru,12,65000,0.05,52000
+2158,2025-02-28,C002,Bright Stores,Retail,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,7,4200,0.02,2500
+2159,2025-03-17,C017,Vertex Corp,Enterprise,P104,Monitor 24,Electronics,North,Delhi,Delhi,16,14500,0.07,10500
+2160,2025-04-21,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,South,Kerala,Kochi,5,28000,0.06,22000
+2161,2025-05-11,C014,Apex Systems,Enterprise,P106,Desk,Furniture,West,Maharashtra,Pune,13,12000,0.05,8200
+2162,2025-06-24,C007,Value Hub,Retail,P105,Keyboard,Accessories,East,West Bengal,Kolkata,18,1800,0.03,1050
+2163,2025-07-27,C004,Prime Retail,Retail,P108,Headset,Accessories,South,Tamil Nadu,Chennai,9,3200,0.05,1900
+2164,2025-08-11,C010,Daily Needs,Retail,P103,Office Chair,Furniture,North,Delhi,Gurugram,7,8500,0.08,6000
+2165,2025-09-06,C001,Aarav Traders,SMB,P107,Printer,Electronics,West,Maharashtra,Mumbai,19,18500,0.04,14000
+2166,2025-10-18,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,8,65000,0.06,52000
+2167,2025-11-27,C016,NextGen Stores,Retail,P110,Webcam,Accessories,East,West Bengal,Kolkata,12,4200,0.02,2500
+2168,2025-12-09,C019,Digital House,Retail,P104,Monitor 24,Electronics,West,Gujarat,Ahmedabad,6,14500,0.05,10500
+2169,2025-01-15,C003,Green Mart,SMB,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,16,1200,0.01,700
+2170,2025-02-05,C018,Kaveri Mart,SMB,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,11,28000,0.08,22000
+2171,2025-03-24,C013,Nova Retail,Retail,P106,Desk,Furniture,West,Maharashtra,Pune,4,12000,0.05,8200
+2172,2025-04-14,C005,Urban Needs,Enterprise,P105,Keyboard,Accessories,North,Delhi,Delhi,13,1800,0.02,1050
+2173,2025-05-28,C020,Summit Solutions,Enterprise,P108,Headset,Accessories,East,West Bengal,Kolkata,17,3200,0.06,1900
+2174,2025-06-09,C011,Office World,Enterprise,P103,Office Chair,Furniture,South,Kerala,Kochi,9,8500,0.05,6000
+2175,2025-07-19,C002,Bright Stores,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,5,14500,0.03,10500
+2176,2025-08-23,C006,Metro Supplies,Enterprise,P107,Printer,Electronics,North,Delhi,Gurugram,14,18500,0.08,14000
+2177,2025-09-12,C015,Blue Star Traders,SMB,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,3,65000,0.05,52000
+2178,2025-10-11,C012,Tech Point,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,18,4200,0.03,2500
+2179,2025-11-19,C017,Vertex Corp,Enterprise,P109,Tablet,Electronics,North,Uttar Pradesh,Noida,7,28000,0.06,22000
+2180,2025-12-29,C008,Smart Bazaar,SMB,P106,Desk,Furniture,East,West Bengal,Kolkata,12,12000,0.05,8200
+2181,2025-01-06,C014,Apex Systems,Enterprise,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,8,1200,0.02,700
+2182,2025-02-22,C010,Daily Needs,Retail,P108,Headset,Accessories,West,Maharashtra,Pune,15,3200,0.04,1900
+2183,2025-03-13,C004,Prime Retail,Retail,P103,Office Chair,Furniture,North,Delhi,Delhi,6,8500,0.06,6000
+2184,2025-04-28,C019,Digital House,Retail,P107,Printer,Electronics,South,Karnataka,Mysuru,10,18500,0.07,14000
+2185,2025-05-16,C007,Value Hub,Retail,P105,Keyboard,Accessories,East,West Bengal,Kolkata,17,1800,0.03,1050
+2186,2025-06-03,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,11,14500,0.05,10500
+2187,2025-07-31,C001,Aarav Traders,SMB,P109,Tablet,Electronics,North,Delhi,Gurugram,4,28000,0.09,22000
+2188,2025-08-08,C016,NextGen Stores,Retail,P101,Laptop Pro,Electronics,South,Kerala,Kochi,15,65000,0.07,52000
+2189,2025-09-25,C011,Office World,Enterprise,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,6,4200,0.02,2500
+2190,2025-10-02,C003,Green Mart,SMB,P106,Desk,Furniture,North,Uttar Pradesh,Noida,18,12000,0.05,8200
+2191,2025-11-10,C005,Urban Needs,Enterprise,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,20,1200,0.0,700
+2192,2025-12-16,C020,Summit Solutions,Enterprise,P107,Printer,Electronics,South,Tamil Nadu,Chennai,7,18500,0.06,14000
+2193,2025-01-21,C018,Kaveri Mart,SMB,P104,Monitor 24,Electronics,West,Maharashtra,Pune,14,14500,0.05,10500
+2194,2025-02-11,C013,Nova Retail,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,9,28000,0.04,22000
+2195,2025-03-02,C015,Blue Star Traders,SMB,P108,Headset,Accessories,South,Karnataka,Bengaluru,13,3200,0.06,1900
+2196,2025-04-05,C012,Tech Point,SMB,P103,Office Chair,Furniture,East,West Bengal,Kolkata,5,8500,0.03,6000
+2197,2025-05-23,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,16,65000,0.08,52000
+2198,2025-06-28,C002,Bright Stores,Retail,P105,Keyboard,Accessories,North,Delhi,Gurugram,11,1800,0.02,1050
+2199,2025-07-13,C017,Vertex Corp,Enterprise,P106,Desk,Furniture,South,Kerala,Kochi,8,12000,0.05,8200
+2200,2025-08-26,C014,Apex Systems,Enterprise,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,19,4200,0.07,2500
+2201,2025-09-05,C008,Smart Bazaar,SMB,P107,Printer,Electronics,North,Uttar Pradesh,Noida,3,18500,0.03,14000
+2202,2025-10-20,C010,Daily Needs,Retail,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,16,1200,0.02,700
+2203,2025-11-01,C019,Digital House,Retail,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,12,28000,0.05,22000
+2204,2025-12-08,C004,Prime Retail,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Pune,18,14500,0.06,10500
+2205,2025-01-28,C011,Office World,Enterprise,P108,Headset,Accessories,North,Delhi,Delhi,7,3200,0.04,1900
+2206,2025-02-24,C007,Value Hub,Retail,P106,Desk,Furniture,South,Karnataka,Mysuru,15,12000,0.08,8200
+2207,2025-03-11,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,2,8500,0.05,6000
+2208,2025-04-19,C003,Green Mart,SMB,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,10,65000,0.07,52000
+2209,2025-05-13,C016,NextGen Stores,Retail,P105,Keyboard,Accessories,South,Kerala,Kochi,14,1800,0.03,1050
+2210,2025-06-15,C009,City Enterprise,Enterprise,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,6,4200,0.02,2500
+2211,2025-07-21,C005,Urban Needs,Enterprise,P107,Printer,Electronics,North,Delhi,Gurugram,17,18500,0.08,14000
+2212,2025-08-07,C001,Aarav Traders,SMB,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,9,1200,0.05,700
+2213,2025-09-17,C018,Kaveri Mart,SMB,P104,Monitor 24,Electronics,West,Maharashtra,Pune,13,14500,0.04,10500
+2214,2025-10-30,C013,Nova Retail,Retail,P109,Tablet,Electronics,North,Uttar Pradesh,Noida,8,28000,0.06,22000
+2215,2025-11-16,C015,Blue Star Traders,SMB,P106,Desk,Furniture,East,West Bengal,Kolkata,5,12000,0.03,8200
+2216,2025-12-20,C012,Tech Point,SMB,P108,Headset,Accessories,South,Karnataka,Bengaluru,20,3200,0.05,1900
+2217,2025-01-17,C006,Metro Supplies,Enterprise,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,11,8500,0.07,6000
+2218,2025-02-03,C002,Bright Stores,Retail,P101,Laptop Pro,Electronics,North,Delhi,Delhi,4,65000,0.02,52000
+2219,2025-03-20,C017,Vertex Corp,Enterprise,P105,Keyboard,Accessories,South,Kerala,Kochi,16,1800,0.05,1050
+2220,2025-04-26,C014,Apex Systems,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,9,18500,0.06,14000
+2221,2025-05-06,C008,Smart Bazaar,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,12,4200,0.03,2500
+2222,2025-06-10,C010,Daily Needs,Retail,P104,Monitor 24,Electronics,North,Delhi,Gurugram,7,14500,0.08,10500
+2223,2025-07-28,C019,Digital House,Retail,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,18,1200,0.0,700
+2224,2025-08-13,C011,Office World,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,6,28000,0.05,22000
+2225,2025-09-24,C004,Prime Retail,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,15,3200,0.04,1900
+2226,2025-10-08,C003,Green Mart,SMB,P106,Desk,Furniture,East,West Bengal,Kolkata,10,12000,0.06,8200
+2227,2025-11-23,C016,NextGen Stores,Retail,P101,Laptop Pro,Electronics,South,Karnataka,Mysuru,8,65000,0.07,52000
+2228,2025-12-14,C020,Summit Solutions,Enterprise,P105,Keyboard,Accessories,West,Maharashtra,Mumbai,13,1800,0.03,1050
+2229,2025-01-30,C007,Value Hub,Retail,P103,Office Chair,Furniture,North,Delhi,Delhi,17,8500,0.05,6000
+2230,2025-02-20,C005,Urban Needs,Enterprise,P110,Webcam,Accessories,South,Kerala,Kochi,5,4200,0.08,2500
+2231,2025-03-08,C009,City Enterprise,Enterprise,P107,Printer,Electronics,West,Gujarat,Ahmedabad,14,18500,0.02,14000
+2232,2025-04-12,C013,Nova Retail,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,3,28000,0.05,22000
+2233,2025-05-19,C015,Blue Star Traders,SMB,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,16,14500,0.06,10500
+2234,2025-06-22,C018,Kaveri Mart,SMB,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,12,1200,0.03,700
+2235,2025-07-03,C001,Aarav Traders,SMB,P108,Headset,Accessories,North,Delhi,Gurugram,9,3200,0.05,1900
+2236,2025-08-19,C017,Vertex Corp,Enterprise,P106,Desk,Furniture,South,Karnataka,Bengaluru,15,12000,0.08,8200
+2237,2025-09-08,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,5,65000,0.04,52000
+2238,2025-10-25,C010,Daily Needs,Retail,P105,Keyboard,Accessories,North,Uttar Pradesh,Noida,19,1800,0.02,1050
+2239,2025-11-09,C002,Bright Stores,Retail,P110,Webcam,Accessories,East,West Bengal,Kolkata,7,4200,0.06,2500
+2240,2025-12-26,C014,Apex Systems,Enterprise,P103,Office Chair,Furniture,South,Kerala,Kochi,11,8500,0.05,6000
+2241,2025-01-10,C012,Tech Point,SMB,P107,Printer,Electronics,West,Gujarat,Ahmedabad,18,18500,0.08,14000
+2242,2025-02-26,C008,Smart Bazaar,SMB,P104,Monitor 24,Electronics,North,Delhi,Delhi,6,14500,0.03,10500
+2243,2025-03-14,C019,Digital House,Retail,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,10,28000,0.07,22000
+2244,2025-04-17,C011,Office World,Enterprise,P106,Desk,Furniture,West,Maharashtra,Pune,13,12000,0.05,8200
+2245,2025-05-31,C004,Prime Retail,Retail,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,20,1200,0.02,700
+2246,2025-06-07,C007,Value Hub,Retail,P108,Headset,Accessories,South,Karnataka,Mysuru,4,3200,0.05,1900
+2247,2025-07-11,C005,Urban Needs,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Gurugram,9,65000,0.06,52000
+2248,2025-08-27,C003,Green Mart,SMB,P105,Keyboard,Accessories,West,Maharashtra,Mumbai,16,1800,0.04,1050
+2249,2025-09-13,C020,Summit Solutions,Enterprise,P110,Webcam,Accessories,East,West Bengal,Kolkata,8,4200,0.03,2500
+2250,2025-10-17,C016,NextGen Stores,Retail,P104,Monitor 24,Electronics,South,Kerala,Kochi,14,14500,0.05,10500
+2251,2025-11-14,C009,City Enterprise,Enterprise,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,5,8500,0.07,6000
+2252,2025-12-22,C013,Nova Retail,Retail,P107,Printer,Electronics,North,Uttar Pradesh,Noida,17,18500,0.06,14000
+2253,2025-01-25,C015,Blue Star Traders,SMB,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,7,28000,0.05,22000
+2254,2025-02-13,C006,Metro Supplies,Enterprise,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,13,1200,0.03,700
+2255,2025-03-22,C018,Kaveri Mart,SMB,P106,Desk,Furniture,North,Delhi,Delhi,9,12000,0.08,8200
+2256,2025-04-23,C002,Bright Stores,Retail,P108,Headset,Accessories,East,West Bengal,Kolkata,18,3200,0.05,1900
+2257,2025-05-14,C017,Vertex Corp,Enterprise,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,12,65000,0.07,52000
+2258,2025-06-21,C010,Daily Needs,Retail,P110,Webcam,Accessories,West,Maharashtra,Mumbai,6,4200,0.02,2500
+2259,2025-07-26,C001,Aarav Traders,SMB,P104,Monitor 24,Electronics,North,Delhi,Gurugram,15,14500,0.06,10500
+2260,2025-08-16,C011,Office World,Enterprise,P105,Keyboard,Accessories,South,Kerala,Kochi,11,1800,0.03,1050
+2261,2025-09-02,C014,Apex Systems,Enterprise,P109,Tablet,Electronics,East,West Bengal,Kolkata,4,28000,0.08,22000
+2262,2025-10-06,C007,Value Hub,Retail,P106,Desk,Furniture,West,Gujarat,Ahmedabad,17,12000,0.05,8200
+2263,2025-11-25,C019,Digital House,Retail,P107,Printer,Electronics,North,Uttar Pradesh,Noida,10,18500,0.04,14000
+2264,2025-12-17,C005,Urban Needs,Enterprise,P103,Office Chair,Furniture,South,Tamil Nadu,Chennai,8,8500,0.06,6000
+2265,2025-01-03,C020,Summit Solutions,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,13,65000,0.05,52000
+2266,2025-02-18,C012,Tech Point,SMB,P108,Headset,Accessories,North,Delhi,Delhi,5,3200,0.02,1900
+2267,2025-03-30,C003,Green Mart,SMB,P102,Wireless Mouse,Accessories,South,Karnataka,Mysuru,19,1200,0.0,700
+2268,2025-04-10,C016,NextGen Stores,Retail,P107,Printer,Electronics,West,Gujarat,Ahmedabad,7,18500,0.07,14000
+2269,2025-05-27,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,14,14500,0.05,10500
+2270,2025-06-13,C004,Prime Retail,Retail,P109,Tablet,Electronics,South,Kerala,Kochi,9,28000,0.06,22000
+2271,2025-07-07,C013,Nova Retail,Retail,P105,Keyboard,Accessories,West,Maharashtra,Mumbai,16,1800,0.04,1050
+2272,2025-08-25,C018,Kaveri Mart,SMB,P110,Webcam,Accessories,North,Delhi,Gurugram,12,4200,0.05,2500
+2273,2025-09-20,C006,Metro Supplies,Enterprise,P106,Desk,Furniture,South,Tamil Nadu,Chennai,6,12000,0.08,8200
+2274,2025-10-29,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,East,West Bengal,Kolkata,18,8500,0.03,6000
+2275,2025-11-07,C002,Bright Stores,Retail,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,4,65000,0.06,52000
+2276,2025-12-03,C011,Office World,Enterprise,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,15,1200,0.02,700
+2277,2025-01-16,C017,Vertex Corp,Enterprise,P108,Headset,Accessories,South,Karnataka,Bengaluru,10,3200,0.05,1900
+2278,2025-02-07,C008,Smart Bazaar,SMB,P107,Printer,Electronics,West,Gujarat,Ahmedabad,13,18500,0.08,14000
+2279,2025-03-27,C010,Daily Needs,Retail,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,8,14500,0.04,10500
+2280,2025-04-06,C005,Urban Needs,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,16,28000,0.05,22000
+2281,2025-05-20,C019,Digital House,Retail,P106,Desk,Furniture,North,Delhi,Delhi,7,12000,0.06,8200
+2282,2025-06-02,C014,Apex Systems,Enterprise,P105,Keyboard,Accessories,West,Maharashtra,Mumbai,20,1800,0.03,1050
+2283,2025-07-15,C012,Tech Point,SMB,P110,Webcam,Accessories,South,Kerala,Kochi,9,4200,0.05,2500
+2284,2025-08-14,C007,Value Hub,Retail,P103,Office Chair,Furniture,East,West Bengal,Kolkata,11,8500,0.08,6000
+2285,2025-09-29,C001,Aarav Traders,SMB,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,5,65000,0.04,52000
+2286,2025-10-13,C016,NextGen Stores,Retail,P107,Printer,Electronics,North,Delhi,Gurugram,17,18500,0.06,14000
+2287,2025-11-22,C003,Green Mart,SMB,P102,Wireless Mouse,Accessories,South,Karnataka,Mysuru,14,1200,0.02,700
+2288,2025-12-10,C020,Summit Solutions,Enterprise,P109,Tablet,Electronics,East,West Bengal,Kolkata,6,28000,0.07,22000
+2289,2025-01-23,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,12,14500,0.05,10500
+2290,2025-02-15,C013,Nova Retail,Retail,P108,Headset,Accessories,West,Maharashtra,Pune,18,3200,0.03,1900
+2291,2025-03-06,C011,Office World,Enterprise,P103,Office Chair,Furniture,North,Uttar Pradesh,Noida,9,8500,0.06,6000
+2292,2025-04-22,C018,Kaveri Mart,SMB,P106,Desk,Furniture,South,Kerala,Kochi,13,12000,0.05,8200
+2293,2025-05-25,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,West,Gujarat,Ahmedabad,7,65000,0.08,52000
+2294,2025-06-18,C002,Bright Stores,Retail,P105,Keyboard,Accessories,East,West Bengal,Kolkata,16,1800,0.02,1050
+2295,2025-07-02,C017,Vertex Corp,Enterprise,P110,Webcam,Accessories,South,Karnataka,Bengaluru,4,4200,0.05,2500
+2296,2025-08-22,C004,Prime Retail,Retail,P107,Printer,Electronics,North,Delhi,Delhi,19,18500,0.06,14000
+2297,2025-09-16,C015,Blue Star Traders,SMB,P109,Tablet,Electronics,West,Maharashtra,Mumbai,10,28000,0.04,22000
+2298,2025-10-21,C010,Daily Needs,Retail,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,5,14500,0.05,10500
+2299,2025-11-18,C005,Urban Needs,Enterprise,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,20,1200,0.01,700
+2300,2025-12-06,C012,Tech Point,SMB,P108,Headset,Accessories,West,Gujarat,Ahmedabad,15,3200,0.06,1900
+2301,2025-01-12,C007,Value Hub,Retail,P101,Laptop Pro,Electronics,North,Uttar Pradesh,Noida,11,65000,0.07,52000
+2302,2025-02-21,C019,Digital House,Retail,P106,Desk,Furniture,South,Karnataka,Mysuru,8,12000,0.05,8200
+2303,2025-03-10,C014,Apex Systems,Enterprise,P107,Printer,Electronics,West,Maharashtra,Pune,13,18500,0.08,14000
+2304,2025-04-09,C003,Green Mart,SMB,P110,Webcam,Accessories,North,Delhi,Gurugram,7,4200,0.02,2500
+2305,2025-05-17,C016,NextGen Stores,Retail,P103,Office Chair,Furniture,East,West Bengal,Kolkata,16,8500,0.05,6000
+2306,2025-06-06,C020,Summit Solutions,Enterprise,P109,Tablet,Electronics,South,Kerala,Kochi,12,28000,0.06,22000
+2307,2025-07-24,C011,Office World,Enterprise,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,5,1800,0.03,1050
+2308,2025-08-05,C008,Smart Bazaar,SMB,P104,Monitor 24,Electronics,North,Delhi,Delhi,18,14500,0.05,10500
+2309,2025-09-23,C001,Aarav Traders,SMB,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,14,1200,0.02,700
+2310,2025-10-10,C006,Metro Supplies,Enterprise,P108,Headset,Accessories,East,West Bengal,Kolkata,9,3200,0.05,1900
+2311,2025-11-05,C013,Nova Retail,Retail,P106,Desk,Furniture,West,Maharashtra,Mumbai,15,12000,0.07,8200
+2312,2025-12-18,C017,Vertex Corp,Enterprise,P101,Laptop Pro,Electronics,North,Uttar Pradesh,Noida,6,65000,0.06,52000
+2313,2025-01-08,C010,Daily Needs,Retail,P107,Printer,Electronics,South,Karnataka,Bengaluru,17,18500,0.04,14000
+2314,2025-02-09,C005,Urban Needs,Enterprise,P103,Office Chair,Furniture,West,Maharashtra,Pune,3,8500,0.05,6000
+2315,2025-03-16,C018,Kaveri Mart,SMB,P109,Tablet,Electronics,East,West Bengal,Kolkata,8,28000,0.08,22000
+2316,2025-04-25,C002,Bright Stores,Retail,P110,Webcam,Accessories,South,Kerala,Kochi,11,4200,0.03,2500
+2317,2025-05-08,C009,City Enterprise,Enterprise,P104,Monitor 24,Electronics,West,Gujarat,Ahmedabad,14,14500,0.06,10500
+2318,2025-06-20,C015,Blue Star Traders,SMB,P105,Keyboard,Accessories,North,Delhi,Gurugram,19,1800,0.02,1050
+2319,2025-07-05,C004,Prime Retail,Retail,P106,Desk,Furniture,South,Tamil Nadu,Chennai,7,12000,0.05,8200
+2320,2025-08-31,C012,Tech Point,SMB,P107,Printer,Electronics,East,West Bengal,Kolkata,10,18500,0.07,14000
+2321,2025-09-07,C019,Digital House,Retail,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,4,65000,0.05,52000
+2322,2025-10-04,C007,Value Hub,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,17,3200,0.03,1900
+2323,2025-11-12,C020,Summit Solutions,Enterprise,P109,Tablet,Electronics,South,Karnataka,Mysuru,13,28000,0.06,22000
+2324,2025-12-28,C016,NextGen Stores,Retail,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,8,1200,0.02,700
+2325,2025-01-14,C011,Office World,Enterprise,P103,Office Chair,Furniture,East,West Bengal,Kolkata,15,8500,0.05,6000
+2326,2025-02-28,C014,Apex Systems,Enterprise,P104,Monitor 24,Electronics,South,Kerala,Kochi,6,14500,0.08,10500
+2327,2025-03-03,C003,Green Mart,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,12,4200,0.04,2500
+2328,2025-04-15,C006,Metro Supplies,Enterprise,P107,Printer,Electronics,North,Delhi,Delhi,18,18500,0.06,14000
+2329,2025-05-30,C010,Daily Needs,Retail,P105,Keyboard,Accessories,South,Tamil Nadu,Chennai,5,1800,0.03,1050
+2330,2025-06-16,C005,Urban Needs,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,9,65000,0.07,52000
+2331,2025-07-18,C017,Vertex Corp,Enterprise,P106,Desk,Furniture,East,West Bengal,Kolkata,14,12000,0.05,8200
+2332,2025-08-10,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,South,Karnataka,Bengaluru,7,28000,0.02,22000
+2333,2025-09-19,C013,Nova Retail,Retail,P108,Headset,Accessories,North,Delhi,Gurugram,16,3200,0.05,1900
+2334,2025-10-15,C002,Bright Stores,Retail,P103,Office Chair,Furniture,West,Maharashtra,Pune,4,8500,0.06,6000
+2335,2025-11-30,C009,City Enterprise,Enterprise,P102,Wireless Mouse,Accessories,South,Kerala,Kochi,20,1200,0.0,700
+2336,2025-12-13,C018,Kaveri Mart,SMB,P110,Webcam,Accessories,East,West Bengal,Kolkata,10,4200,0.03,2500
+2337,2025-01-20,C001,Aarav Traders,SMB,P107,Printer,Electronics,North,Uttar Pradesh,Noida,13,18500,0.05,14000
+2338,2025-02-10,C016,NextGen Stores,Retail,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,8,14500,0.07,10500
+2339,2025-03-25,C020,Summit Solutions,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,15,65000,0.06,52000
+2340,2025-04-29,C007,Value Hub,Retail,P105,Keyboard,Accessories,East,West Bengal,Kolkata,11,1800,0.02,1050
+2341,2025-05-10,C012,Tech Point,SMB,P106,Desk,Furniture,South,Karnataka,Mysuru,17,12000,0.05,8200
+2342,2025-06-27,C004,Prime Retail,Retail,P109,Tablet,Electronics,North,Delhi,Delhi,6,28000,0.08,22000
+2343,2025-07-09,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,9,8500,0.04,6000
+2344,2025-08-03,C005,Urban Needs,Enterprise,P108,Headset,Accessories,South,Kerala,Kochi,18,3200,0.05,1900
+2345,2025-09-26,C011,Office World,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,5,18500,0.06,14000
+2346,2025-10-07,C014,Apex Systems,Enterprise,P102,Wireless Mouse,Accessories,West,Maharashtra,Pune,14,1200,0.03,700
+2347,2025-11-17,C019,Digital House,Retail,P104,Monitor 24,Electronics,North,Uttar Pradesh,Noida,10,14500,0.05,10500
+2348,2025-12-01,C006,Metro Supplies,Enterprise,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,7,4200,0.02,2500
+2349,2025-01-05,C003,Green Mart,SMB,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,12,65000,0.08,52000
+2350,2025-02-23,C009,City Enterprise,Enterprise,P106,Desk,Furniture,East,West Bengal,Kolkata,3,12000,0.05,8200
+2351,2025-03-09,C010,Daily Needs,Retail,P109,Tablet,Electronics,South,Karnataka,Bengaluru,19,28000,0.07,22000
+2352,2025-04-11,C018,Kaveri Mart,SMB,P105,Keyboard,Accessories,North,Delhi,Gurugram,16,1800,0.02,1050
+2353,2025-05-29,C017,Vertex Corp,Enterprise,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,8,8500,0.06,6000
+2354,2025-06-14,C002,Bright Stores,Retail,P107,Printer,Electronics,East,West Bengal,Kolkata,13,18500,0.05,14000
+2355,2025-07-22,C013,Nova Retail,Retail,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,6,14500,0.03,10500
+2356,2025-08-08,C020,Summit Solutions,Enterprise,P110,Webcam,Accessories,West,Maharashtra,Pune,15,4200,0.08,2500
+2357,2025-09-15,C001,Aarav Traders,SMB,P108,Headset,Accessories,North,Delhi,Delhi,9,3200,0.04,1900
+2358,2025-10-24,C005,Urban Needs,Enterprise,P102,Wireless Mouse,Accessories,South,Kerala,Kochi,18,1200,0.02,700
+2359,2025-11-03,C016,NextGen Stores,Retail,P101,Laptop Pro,Electronics,West,Gujarat,Ahmedabad,5,65000,0.06,52000
+2360,2025-12-25,C012,Tech Point,SMB,P106,Desk,Furniture,North,Uttar Pradesh,Noida,14,12000,0.05,8200
+2361,2025-01-31,C007,Value Hub,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,8,28000,0.04,22000
+2362,2025-02-16,C011,Office World,Enterprise,P105,Keyboard,Accessories,South,Karnataka,Mysuru,20,1800,0.03,1050
+2363,2025-03-19,C014,Apex Systems,Enterprise,P107,Printer,Electronics,West,Maharashtra,Mumbai,11,18500,0.07,14000
+2364,2025-04-07,C004,Prime Retail,Retail,P103,Office Chair,Furniture,North,Delhi,Gurugram,6,8500,0.05,6000
+2365,2025-05-22,C019,Digital House,Retail,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,17,4200,0.02,2500
+2366,2025-06-08,C006,Metro Supplies,Enterprise,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,4,14500,0.06,10500
+2367,2025-07-30,C018,Kaveri Mart,SMB,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,13,65000,0.05,52000
+2368,2025-08-20,C002,Bright Stores,Retail,P108,Headset,Accessories,North,Uttar Pradesh,Noida,10,3200,0.03,1900
+2369,2025-09-04,C015,Blue Star Traders,SMB,P106,Desk,Furniture,South,Kerala,Kochi,9,12000,0.08,8200
+2370,2025-10-18,C010,Daily Needs,Retail,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,16,1800,0.02,1050
+2371,2025-11-26,C003,Green Mart,SMB,P109,Tablet,Electronics,East,West Bengal,Kolkata,7,28000,0.05,22000
+2372,2025-12-04,C017,Vertex Corp,Enterprise,P107,Printer,Electronics,South,Karnataka,Bengaluru,15,18500,0.06,14000
+2373,2025-01-13,C013,Nova Retail,Retail,P104,Monitor 24,Electronics,North,Delhi,Delhi,12,14500,0.04,10500
+2374,2025-02-04,C009,City Enterprise,Enterprise,P110,Webcam,Accessories,West,Maharashtra,Pune,8,4200,0.05,2500
+2375,2025-03-28,C020,Summit Solutions,Enterprise,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,19,1200,0.03,700
+2376,2025-04-18,C005,Urban Needs,Enterprise,P103,Office Chair,Furniture,East,West Bengal,Kolkata,5,8500,0.06,6000
+2377,2025-05-15,C016,NextGen Stores,Retail,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,10,65000,0.07,52000
+2378,2025-06-30,C012,Tech Point,SMB,P109,Tablet,Electronics,North,Delhi,Gurugram,14,28000,0.05,22000
+2379,2025-07-12,C001,Aarav Traders,SMB,P106,Desk,Furniture,South,Karnataka,Mysuru,6,12000,0.02,8200
+2380,2025-08-17,C007,Value Hub,Retail,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,18,1800,0.04,1050
+2381,2025-09-22,C011,Office World,Enterprise,P108,Headset,Accessories,North,Uttar Pradesh,Noida,9,3200,0.06,1900
+2382,2025-10-09,C014,Apex Systems,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,16,18500,0.05,14000
+2383,2025-11-15,C019,Digital House,Retail,P104,Monitor 24,Electronics,South,Kerala,Kochi,7,14500,0.03,10500
+2384,2025-12-11,C006,Metro Supplies,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,13,28000,0.08,22000
+2385,2025-01-07,C018,Kaveri Mart,SMB,P101,Laptop Pro,Electronics,North,Delhi,Delhi,4,65000,0.05,52000
+2386,2025-02-14,C010,Daily Needs,Retail,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,15,4200,0.02,2500
+2387,2025-03-05,C003,Green Mart,SMB,P106,Desk,Furniture,East,West Bengal,Kolkata,12,12000,0.06,8200
+2388,2025-04-02,C015,Blue Star Traders,SMB,P102,Wireless Mouse,Accessories,West,Gujarat,Ahmedabad,8,1200,0.0,700
+2389,2025-05-04,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,North,Uttar Pradesh,Noida,17,8500,0.05,6000
+2390,2025-06-11,C004,Prime Retail,Retail,P107,Printer,Electronics,South,Karnataka,Bengaluru,9,18500,0.07,14000
+2391,2025-07-20,C013,Nova Retail,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,14,14500,0.04,10500
+2392,2025-08-02,C009,City Enterprise,Enterprise,P105,Keyboard,Accessories,East,West Bengal,Kolkata,20,1800,0.03,1050
+2393,2025-09-10,C017,Vertex Corp,Enterprise,P108,Headset,Accessories,South,Kerala,Kochi,5,3200,0.05,1900
+2394,2025-10-27,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,North,Delhi,Gurugram,11,28000,0.06,22000
+2395,2025-11-21,C002,Bright Stores,Retail,P106,Desk,Furniture,West,Gujarat,Ahmedabad,7,12000,0.05,8200
+2396,2025-12-07,C012,Tech Point,SMB,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,18,65000,0.08,52000
+2397,2025-01-19,C005,Urban Needs,Enterprise,P107,Printer,Electronics,South,Tamil Nadu,Chennai,13,18500,0.05,14000
+2398,2025-02-27,C016,NextGen Stores,Retail,P104,Monitor 24,Electronics,West,Maharashtra,Pune,6,14500,0.02,10500
+2399,2025-03-15,C011,Office World,Enterprise,P110,Webcam,Accessories,North,Delhi,Delhi,10,4200,0.06,2500
+2400,2025-04-30,C019,Digital House,Retail,P102,Wireless Mouse,Accessories,South,Karnataka,Mysuru,16,1200,0.03,700
+2401,2025-05-26,C007,Value Hub,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,9,28000,0.07,22000
+2402,2025-06-05,C014,Apex Systems,Enterprise,P105,Keyboard,Accessories,West,Gujarat,Ahmedabad,14,1800,0.05,1050
+2403,2025-07-17,C003,Green Mart,SMB,P103,Office Chair,Furniture,North,Uttar Pradesh,Noida,8,8500,0.06,6000
+2404,2025-08-09,C020,Summit Solutions,Enterprise,P101,Laptop Pro,Electronics,South,Kerala,Kochi,12,65000,0.04,52000
+2405,2025-09-18,C010,Daily Needs,Retail,P108,Headset,Accessories,West,Maharashtra,Mumbai,19,3200,0.05,1900
+2406,2025-10-16,C018,Kaveri Mart,SMB,P106,Desk,Furniture,East,West Bengal,Kolkata,5,12000,0.08,8200
+2407,2025-11-08,C015,Blue Star Traders,SMB,P107,Printer,Electronics,South,Karnataka,Bengaluru,7,18500,0.03,14000
+2408,2025-12-19,C006,Metro Supplies,Enterprise,P104,Monitor 24,Electronics,North,Delhi,Gurugram,15,14500,0.06,10500
+2409,2025-01-02,C001,Aarav Traders,SMB,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,11,4200,0.02,2500
+2410,2025-02-08,C013,Nova Retail,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,4,28000,0.05,22000
+2411,2025-03-18,C017,Vertex Corp,Enterprise,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,17,1200,0.03,700
+2412,2025-04-24,C004,Prime Retail,Retail,P105,Keyboard,Accessories,West,Maharashtra,Pune,9,1800,0.06,1050
+2413,2025-05-09,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Delhi,16,65000,0.07,52000
+2414,2025-06-26,C002,Bright Stores,Retail,P103,Office Chair,Furniture,South,Karnataka,Mysuru,6,8500,0.05,6000
+2415,2025-07-06,C011,Office World,Enterprise,P107,Printer,Electronics,West,Maharashtra,Mumbai,13,18500,0.08,14000
+2416,2025-08-24,C019,Digital House,Retail,P104,Monitor 24,Electronics,North,Uttar Pradesh,Noida,10,14500,0.04,10500
+2417,2025-09-14,C005,Urban Needs,Enterprise,P106,Desk,Furniture,East,West Bengal,Kolkata,18,12000,0.05,8200
+2418,2025-10-03,C016,NextGen Stores,Retail,P108,Headset,Accessories,South,Kerala,Kochi,7,3200,0.02,1900
+2419,2025-11-24,C012,Tech Point,SMB,P109,Tablet,Electronics,West,Gujarat,Ahmedabad,5,28000,0.06,22000
+2420,2025-12-02,C014,Apex Systems,Enterprise,P110,Webcam,Accessories,North,Delhi,Gurugram,14,4200,0.05,2500
+2421,2025-01-29,C008,Smart Bazaar,SMB,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,20,1200,0.02,700
+2422,2025-02-06,C020,Summit Solutions,Enterprise,P107,Printer,Electronics,West,Maharashtra,Pune,8,18500,0.07,14000
+2423,2025-03-13,C007,Value Hub,Retail,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,11,14500,0.05,10500
+2424,2025-04-20,C003,Green Mart,SMB,P101,Laptop Pro,Electronics,South,Karnataka,Bengaluru,6,65000,0.06,52000
+2425,2025-05-18,C018,Kaveri Mart,SMB,P105,Keyboard,Accessories,North,Delhi,Delhi,15,1800,0.03,1050
+2426,2025-06-07,C010,Daily Needs,Retail,P109,Tablet,Electronics,West,Maharashtra,Mumbai,9,28000,0.05,22000
+2427,2025-07-28,C013,Nova Retail,Retail,P106,Desk,Furniture,South,Kerala,Kochi,13,12000,0.08,8200
+2428,2025-08-15,C006,Metro Supplies,Enterprise,P108,Headset,Accessories,East,West Bengal,Kolkata,17,3200,0.04,1900
+2429,2025-09-08,C015,Blue Star Traders,SMB,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,4,8500,0.06,6000
+2430,2025-10-12,C001,Aarav Traders,SMB,P107,Printer,Electronics,North,Uttar Pradesh,Noida,19,18500,0.05,14000
+2431,2025-11-16,C009,City Enterprise,Enterprise,P110,Webcam,Accessories,South,Tamil Nadu,Chennai,12,4200,0.03,2500
+2432,2025-12-23,C011,Office World,Enterprise,P104,Monitor 24,Electronics,West,Maharashtra,Pune,7,14500,0.08,10500
+2433,2025-01-11,C004,Prime Retail,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,14,28000,0.06,22000
+2434,2025-02-17,C017,Vertex Corp,Enterprise,P102,Wireless Mouse,Accessories,South,Karnataka,Mysuru,5,1200,0.01,700
+2435,2025-03-30,C005,Urban Needs,Enterprise,P106,Desk,Furniture,North,Delhi,Gurugram,16,12000,0.07,8200
+2436,2025-04-04,C019,Digital House,Retail,P108,Headset,Accessories,West,Maharashtra,Mumbai,8,3200,0.05,1900
+2437,2025-05-12,C014,Apex Systems,Enterprise,P101,Laptop Pro,Electronics,South,Kerala,Kochi,10,65000,0.06,52000
+2438,2025-06-19,C002,Bright Stores,Retail,P105,Keyboard,Accessories,East,West Bengal,Kolkata,18,1800,0.03,1050
+2439,2025-07-08,C016,NextGen Stores,Retail,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,6,8500,0.05,6000
+2440,2025-08-29,C012,Tech Point,SMB,P107,Printer,Electronics,North,Uttar Pradesh,Noida,15,18500,0.08,14000
+2441,2025-09-22,C007,Value Hub,Retail,P104,Monitor 24,Electronics,South,Tamil Nadu,Chennai,9,14500,0.04,10500
+2442,2025-10-05,C020,Summit Solutions,Enterprise,P109,Tablet,Electronics,West,Maharashtra,Pune,13,28000,0.07,22000
+2443,2025-11-02,C010,Daily Needs,Retail,P110,Webcam,Accessories,East,West Bengal,Kolkata,4,4200,0.02,2500
+2444,2025-12-14,C003,Green Mart,SMB,P106,Desk,Furniture,South,Karnataka,Bengaluru,17,12000,0.06,8200
+2445,2025-01-24,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,North,Delhi,Delhi,8,65000,0.05,52000
+2446,2025-02-12,C018,Kaveri Mart,SMB,P108,Headset,Accessories,West,Gujarat,Ahmedabad,11,3200,0.03,1900
+2447,2025-03-04,C013,Nova Retail,Retail,P102,Wireless Mouse,Accessories,South,Kerala,Kochi,20,1200,0.0,700
+2448,2025-04-27,C011,Office World,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,5,18500,0.06,14000
+2449,2025-05-23,C015,Blue Star Traders,SMB,P104,Monitor 24,Electronics,West,Maharashtra,Mumbai,12,14500,0.05,10500
+2450,2025-06-03,C004,Prime Retail,Retail,P105,Keyboard,Accessories,North,Uttar Pradesh,Noida,16,1800,0.02,1050
+2451,2025-07-16,C009,City Enterprise,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,7,28000,0.08,22000
+2452,2025-08-06,C001,Aarav Traders,SMB,P103,Office Chair,Furniture,East,West Bengal,Kolkata,9,8500,0.05,6000
+2453,2025-09-11,C017,Vertex Corp,Enterprise,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,18,4200,0.04,2500
+2454,2025-10-23,C007,Value Hub,Retail,P106,Desk,Furniture,North,Delhi,Gurugram,14,12000,0.06,8200
+2455,2025-11-06,C014,Apex Systems,Enterprise,P101,Laptop Pro,Electronics,South,Karnataka,Mysuru,4,65000,0.05,52000
+2456,2025-12-18,C019,Digital House,Retail,P107,Printer,Electronics,East,West Bengal,Kolkata,10,18500,0.07,14000
+2457,2025-01-18,C012,Tech Point,SMB,P104,Monitor 24,Electronics,West,Maharashtra,Pune,15,14500,0.03,10500
+2458,2025-02-25,C005,Urban Needs,Enterprise,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,13,1200,0.02,700
+2459,2025-03-12,C010,Daily Needs,Retail,P108,Headset,Accessories,South,Kerala,Kochi,6,3200,0.05,1900
+2460,2025-04-16,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,11,8500,0.08,6000
+2461,2025-05-05,C008,Smart Bazaar,SMB,P109,Tablet,Electronics,East,West Bengal,Kolkata,17,28000,0.06,22000
+2462,2025-06-25,C016,NextGen Stores,Retail,P105,Keyboard,Accessories,South,Tamil Nadu,Chennai,8,1800,0.03,1050
+2463,2025-07-04,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Mumbai,16,65000,0.07,52000
+2464,2025-08-18,C013,Nova Retail,Retail,P110,Webcam,Accessories,North,Delhi,Delhi,5,4200,0.02,2500
+2465,2025-09-27,C002,Bright Stores,Retail,P106,Desk,Furniture,South,Karnataka,Bengaluru,19,12000,0.05,8200
+2466,2025-10-11,C011,Office World,Enterprise,P107,Printer,Electronics,East,West Bengal,Kolkata,7,18500,0.06,14000
+2467,2025-11-28,C018,Kaveri Mart,SMB,P104,Monitor 24,Electronics,West,Gujarat,Ahmedabad,12,14500,0.04,10500
+2468,2025-12-09,C015,Blue Star Traders,SMB,P109,Tablet,Electronics,North,Uttar Pradesh,Noida,9,28000,0.07,22000
+2469,2025-01-26,C003,Green Mart,SMB,P108,Headset,Accessories,South,Kerala,Kochi,14,3200,0.03,1900
+2470,2025-02-09,C009,City Enterprise,Enterprise,P101,Laptop Pro,Electronics,West,Maharashtra,Pune,6,65000,0.05,52000
+2471,2025-03-21,C004,Prime Retail,Retail,P102,Wireless Mouse,Accessories,East,West Bengal,Kolkata,18,1200,0.02,700
+2472,2025-04-13,C017,Vertex Corp,Enterprise,P105,Keyboard,Accessories,South,Tamil Nadu,Chennai,10,1800,0.06,1050
+2473,2025-05-31,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,North,Delhi,Gurugram,7,8500,0.05,6000
+2474,2025-06-17,C007,Value Hub,Retail,P110,Webcam,Accessories,West,Gujarat,Ahmedabad,15,4200,0.04,2500
+2475,2025-07-09,C014,Apex Systems,Enterprise,P104,Monitor 24,Electronics,East,West Bengal,Kolkata,4,14500,0.05,10500
+2476,2025-08-21,C001,Aarav Traders,SMB,P106,Desk,Furniture,South,Karnataka,Mysuru,13,12000,0.07,8200
+2477,2025-09-05,C005,Urban Needs,Enterprise,P107,Printer,Electronics,West,Maharashtra,Mumbai,8,18500,0.06,14000
+2478,2025-10-28,C019,Digital House,Retail,P109,Tablet,Electronics,North,Uttar Pradesh,Noida,16,28000,0.05,22000
+2479,2025-11-10,C012,Tech Point,SMB,P108,Headset,Accessories,South,Kerala,Kochi,11,3200,0.02,1900
+2480,2025-12-21,C006,Metro Supplies,Enterprise,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,5,65000,0.08,52000
+2481,2025-01-04,C016,NextGen Stores,Retail,P103,Office Chair,Furniture,West,Gujarat,Ahmedabad,18,8500,0.06,6000
+2482,2025-02-19,C013,Nova Retail,Retail,P105,Keyboard,Accessories,North,Delhi,Delhi,9,1800,0.03,1050
+2483,2025-03-06,C011,Office World,Enterprise,P102,Wireless Mouse,Accessories,South,Tamil Nadu,Chennai,14,1200,0.02,700
+2484,2025-04-30,C002,Bright Stores,Retail,P109,Tablet,Electronics,East,West Bengal,Kolkata,6,28000,0.05,22000
+2485,2025-05-16,C018,Kaveri Mart,SMB,P107,Printer,Electronics,West,Maharashtra,Pune,17,18500,0.07,14000
+2486,2025-06-12,C004,Prime Retail,Retail,P104,Monitor 24,Electronics,North,Uttar Pradesh,Noida,10,14500,0.06,10500
+2487,2025-07-31,C010,Daily Needs,Retail,P110,Webcam,Accessories,South,Karnataka,Bengaluru,8,4200,0.03,2500
+2488,2025-08-14,C003,Green Mart,SMB,P106,Desk,Furniture,West,Gujarat,Ahmedabad,12,12000,0.05,8200
+2489,2025-09-17,C015,Blue Star Traders,SMB,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,7,65000,0.07,52000
+2490,2025-10-02,C009,City Enterprise,Enterprise,P108,Headset,Accessories,South,Kerala,Kochi,16,3200,0.05,1900
+2491,2025-11-22,C020,Summit Solutions,Enterprise,P103,Office Chair,Furniture,West,Maharashtra,Mumbai,5,8500,0.08,6000
+2492,2025-12-05,C017,Vertex Corp,Enterprise,P105,Keyboard,Accessories,North,Delhi,Gurugram,19,1800,0.02,1050
+2493,2025-01-15,C006,Metro Supplies,Enterprise,P109,Tablet,Electronics,South,Tamil Nadu,Chennai,13,28000,0.06,22000
+2494,2025-02-02,C007,Value Hub,Retail,P107,Printer,Electronics,East,West Bengal,Kolkata,4,18500,0.04,14000
+2495,2025-03-26,C014,Apex Systems,Enterprise,P104,Monitor 24,Electronics,West,Gujarat,Ahmedabad,15,14500,0.05,10500
+2496,2025-04-14,C001,Aarav Traders,SMB,P102,Wireless Mouse,Accessories,North,Uttar Pradesh,Noida,20,1200,0.03,700
+2497,2025-05-08,C012,Tech Point,SMB,P110,Webcam,Accessories,South,Karnataka,Mysuru,6,4200,0.02,2500
+2498,2025-06-28,C005,Urban Needs,Enterprise,P106,Desk,Furniture,West,Maharashtra,Pune,11,12000,0.05,8200
+2499,2025-07-14,C019,Digital House,Retail,P101,Laptop Pro,Electronics,East,West Bengal,Kolkata,8,65000,0.06,52000
+2500,2025-08-30,C016,NextGen Stores,Retail,P108,Headset,Accessories,South,Kerala,Kochi,17,3200,0.04,1900
