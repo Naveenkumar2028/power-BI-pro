@@ -1,0 +1,62 @@
+-- SALES PERFORMANCE MEASURES
+
+Total Revenue =
+SUMX(
+    'Fact Sales',
+    'Fact Sales'[Quantity] * 'Fact Sales'[UnitPrice] * (1 - 'Fact Sales'[DiscountPct])
+)
+
+Total Cost =
+SUMX(
+    'Fact Sales',
+    'Fact Sales'[Quantity] * 'Fact Sales'[CostPerUnit]
+)
+
+Total Profit = [Total Revenue] - [Total Cost]
+
+Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
+
+Total Orders = DISTINCTCOUNT('Fact Sales'[OrderID])
+
+Total Customers = DISTINCTCOUNT('Fact Sales'[CustomerID])
+
+Total Quantity = SUM('Fact Sales'[Quantity])
+
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+
+Revenue LY =
+CALCULATE(
+    [Total Revenue],
+    SAMEPERIODLASTYEAR('Dim Date'[Date])
+)
+
+YoY Growth % =
+DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
+
+Customers with Orders =
+CALCULATE(
+    DISTINCTCOUNT('Fact Sales'[CustomerID]),
+    FILTER(
+        VALUES('Fact Sales'[CustomerID]),
+        CALCULATE(DISTINCTCOUNT('Fact Sales'[OrderID])) > 0
+    )
+)
+
+-- Optional ranking measures
+Product Revenue Rank =
+RANKX(
+    ALL('Dim Product'[ProductName]),
+    [Total Revenue],
+    ,
+    DESC,
+    DENSE
+)
+
+Region Revenue Rank =
+RANKX(
+    ALL('Dim Geography'[Region]),
+    [Total Revenue],
+    ,
+    DESC,
+    DENSE
+)
