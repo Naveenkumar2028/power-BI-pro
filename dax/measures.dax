@@ -1,62 +1,39 @@
 -- SALES PERFORMANCE MEASURES
 
 Total Revenue =
-SUMX(
-    'Fact Sales',
-    'Fact Sales'[Quantity] * 'Fact Sales'[UnitPrice] * (1 - 'Fact Sales'[DiscountPct])
-)
+SUMX('Fact Sales','Fact Sales'[Quantity] * 'Fact Sales'[UnitPrice] * (1 - 'Fact Sales'[DiscountPct]))
 
 Total Cost =
-SUMX(
-    'Fact Sales',
-    'Fact Sales'[Quantity] * 'Fact Sales'[CostPerUnit]
-)
+SUMX('Fact Sales','Fact Sales'[Quantity] * 'Fact Sales'[CostPerUnit])
 
 Total Profit = [Total Revenue] - [Total Cost]
-
-Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
-
+Profit Margin % = DIVIDE([Total Profit],[Total Revenue])
 Total Orders = DISTINCTCOUNT('Fact Sales'[OrderID])
-
 Total Customers = DISTINCTCOUNT('Fact Sales'[CustomerID])
-
 Total Quantity = SUM('Fact Sales'[Quantity])
+Average Order Value = DIVIDE([Total Revenue],[Total Orders])
 
-Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+-- MONTH-OVER-MONTH ANALYSIS
+Revenue PM = CALCULATE([Total Revenue],DATEADD('Dim Date'[Date],-1,MONTH))
+MoM Growth % = DIVIDE([Total Revenue]-[Revenue PM],[Revenue PM])
+Profit PM = CALCULATE([Total Profit],DATEADD('Dim Date'[Date],-1,MONTH))
+Profit MoM Growth % = DIVIDE([Total Profit]-[Profit PM],[Profit PM])
 
-Revenue LY =
-CALCULATE(
-    [Total Revenue],
-    SAMEPERIODLASTYEAR('Dim Date'[Date])
-)
+-- YEAR-OVER-YEAR ANALYSIS
+Revenue LY = CALCULATE([Total Revenue],SAMEPERIODLASTYEAR('Dim Date'[Date]))
+YoY Growth % = DIVIDE([Total Revenue]-[Revenue LY],[Revenue LY])
 
-YoY Growth % =
-DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
+-- CUSTOMER ANALYTICS
+Customers with Orders = CALCULATE(DISTINCTCOUNT('Fact Sales'[CustomerID]),FILTER(VALUES('Fact Sales'[CustomerID]),CALCULATE(DISTINCTCOUNT('Fact Sales'[OrderID]))>0))
+Revenue per Customer = DIVIDE([Total Revenue],[Total Customers])
+Orders per Customer = DIVIDE([Total Orders],[Total Customers])
 
-Customers with Orders =
-CALCULATE(
-    DISTINCTCOUNT('Fact Sales'[CustomerID]),
-    FILTER(
-        VALUES('Fact Sales'[CustomerID]),
-        CALCULATE(DISTINCTCOUNT('Fact Sales'[OrderID])) > 0
-    )
-)
+-- PRODUCT / REGION RANKING
+Product Revenue Rank = RANKX(ALL('Dim Product'[ProductName]),[Total Revenue],,DESC,DENSE)
+Region Revenue Rank = RANKX(ALL('Dim Geography'[Region]),[Total Revenue],,DESC,DENSE)
 
--- Optional ranking measures
-Product Revenue Rank =
-RANKX(
-    ALL('Dim Product'[ProductName]),
-    [Total Revenue],
-    ,
-    DESC,
-    DENSE
-)
-
-Region Revenue Rank =
-RANKX(
-    ALL('Dim Geography'[Region]),
-    [Total Revenue],
-    ,
-    DESC,
-    DENSE
-)
+-- MANAGEMENT TARGET MODEL
+-- In production, replace the 10% growth assumption with an approved target table.
+Revenue Target = [Total Revenue] * 1.10
+Target Variance = [Total Revenue] - [Revenue Target]
+Target Achievement % = DIVIDE([Total Revenue],[Revenue Target])
